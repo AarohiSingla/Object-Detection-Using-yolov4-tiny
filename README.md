@@ -23,6 +23,8 @@ python convert_tflite.py --weights ./checkpoints/yolov4-tiny-416 --output ./chec
 # yolov4 quantize float16
 python convert_tflite.py --weights ./checkpoints/ yolov4-tiny-416 --output ./checkpoints/yolov4-416-fp16.tflite --quantize_mode float16
 
+
+# Perform Detections
 python detect.py --weights ./checkpoints/yolov4-tiny-416.tflite --size 416 --model yolov4 –images testimg.jfif  --output ./output/outputtflite.jpg --framework tflite
 
 
