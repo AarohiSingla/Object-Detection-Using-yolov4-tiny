@@ -28,5 +28,6 @@ python convert_tflite.py --weights ./checkpoints/ yolov4-tiny-416 --output ./che
 python detect.py --weights ./checkpoints/yolov4-tiny-416.tflite --size 416 --model yolov4 –images testimg.jfif  --output ./output/outputtflite.jpg --framework tflite
 
 
-
+# Android App for Object Detection
+### Download that code from this link:  https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/android
 
